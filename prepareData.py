@@ -282,8 +282,8 @@ def build_road_state(relation_file, state_file, neighbor_node, mask_num, save_di
     num_roads = len(road_dict_road2id)
     net_shape = relation['net_shape']
     neighbor_num = relation['neighbor_num']
-    # mask_inter = random.sample(neighbor_num[int(neighbor_node)], int(mask_num)) # idx of mask intersections
-    mask_inter = [6,9]
+    mask_inter = random.sample(neighbor_num[int(neighbor_node)], int(mask_num)) # idx of mask intersections
+    # mask_inter = [6,9]
     mask_or = {} # ids of mask intersections
     for i in mask_inter:
         mask_or[i] = inter_dict_id2inter[i]
@@ -709,7 +709,7 @@ if __name__ == "__main__":
 
     state_file_list = [os.path.join(data_basedir, s_dic) for s_dic in state_file]
     
-    # build_road_state(relation_filename, state_file_list, neighbor_node, mask_num, save_dir=graph_signal_matrix_filename)
+    build_road_state(relation_filename, state_file_list, neighbor_node, mask_num, save_dir=graph_signal_matrix_filename)
 
     # according to file of task above, generate train set,val set and test set.
     read_and_generate_dataset(graph_signal_matrix_filename, num_of_mhalf, len_input, num_for_predict, points_per_mhalf=points_per_mhalf, save=True)
