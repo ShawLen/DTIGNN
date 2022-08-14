@@ -1,0 +1,12 @@
+__pycache__/
+examples/*
+!examples/.gitkeep
+*.DS_Store
+!*.jpg
+.idea/
+model/
+log/
+local/
+experiments/
+state_data
+venv/
