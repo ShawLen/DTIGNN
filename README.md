@@ -1,5 +1,15 @@
 # DTIGNN
-This is the PyTorch implementation of DTIGNN in the following paper: Modeling Network-level Traffic Flow Transitions on Sparse Data.
+This is the PyTorch implementation of DTIGNN in the following paper: [Modeling Network-level Traffic Flow Transitions on Sparse Data](https://arxiv.org/abs/2208.06646).
+```
+@inproceedings{lei2022modeling,
+  title={Modeling Network-level Traffic Flow Transitions on Sparse Data},
+  author={Lei, Xiaoliang and Mei, Hao and Shi, Bin and Wei, Hua},
+  booktitle={Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={835--845},
+  year={2022}
+}
+```
+Usage and more information can be found below.
 
 ## Usage
 
